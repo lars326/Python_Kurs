@@ -1,0 +1,17 @@
+import tkinter as tk
+ 
+window = tk.Tk()
+window.title("GUI Mit Button")
+window.geometry("200x100")
+
+def on_click():
+    label.config(text="Button geklickt")
+
+button = tk.Button(window, text="Click me", command=on_click)
+button.pack(padx=5, pady=5)
+
+label = tk.Label(window, text="Warten auf den Klick")
+label.pack(padx=5, pady=5)
+ 
+   
+window.mainloop()
